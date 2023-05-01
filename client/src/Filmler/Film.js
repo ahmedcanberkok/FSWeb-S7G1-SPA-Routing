@@ -16,7 +16,7 @@ export default function Film(props) {
           // Bu kısmı log statementlarıyla çalışın
           console.log("Api Yaniti : ",response);
           // ve burdan gelen response'u 'movie' e aktarın
-          const movie = response.data ;
+           const movie = response.data ;
           setMovie (response.data);
         })
       .catch(error => {
