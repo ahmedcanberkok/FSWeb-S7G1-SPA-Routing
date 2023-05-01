@@ -21,7 +21,7 @@ export default function App () {
           setMovieList (movieList); // Burada movieList state'ine veriyi aktarıyoruz
         })
         .catch(error => {
-          console.error('Sunucu Hatası', error);
+          console.error('Sunucu Hatasi', error);
         });
     }
     FilmleriAl();
