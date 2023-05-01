@@ -24,7 +24,7 @@ export default function Film(props) {
       });
     // Bu effect her `id ` değiştiğinde çalışmalı
     // Bunu nasıl gerçekleştirebiliriz?
-  }, [id]); // <--------- sadece 'id' değiştiğinde çalışır. (DidUpdate Fazından Dolayı)
+  }, [id]); // <---------- sadece 'id' değiştiğinde çalışır. (DidUpdate Fazından Dolayı)
 
   // Yalnızca esnek görevlere geçtiğinizde burdaki yorum etiketini kaldırın
   // const filmiKaydet = evt => { }
