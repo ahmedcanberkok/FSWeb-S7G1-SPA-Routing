@@ -5,7 +5,7 @@ export default function FilmListesi(props) {
   return (
     <div className="movie-list">
       {props.movies.map(movie => (
-        <Link key={movie.id} to={`/movie/${movie.id}`}>
+        <Link key={movie.id} to={`/movies/${movie.id}`}>
           <FilmDetayları key={movie.id} movie={movie} />
         </Link>
         
