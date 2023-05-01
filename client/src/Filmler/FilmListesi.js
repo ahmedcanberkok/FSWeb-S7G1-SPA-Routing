@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function FilmListesi(props) {
   return (
     <div className="movie-list">
       {props.movies.map(movie => (
-        <FilmDetayları key={movie.id} movie={movie} />
+        <Link key={movie.id} to={`/movie/${movie.id}`}>
+          <FilmDetayları key={movie.id} movie={movie} />
+        </Link>
+        
       ))}
     </div>
   );
